@@ -49,7 +49,7 @@ void UVHGameInstance::FindLANSessions()
 {
     if (!SessionInterface.IsValid())
     {
-        OnSessionsFound.Broadcast(TArray<FSimpleSessionResult>());
+
         return;
     }
 
@@ -120,7 +120,6 @@ void UVHGameInstance::HandleFindSessionsComplete(bool bWasSuccessful)
     }
 
     CachedResults.Reset();
-    TArray<FSimpleSessionResult> Simple;
 
     if (bWasSuccessful && SessionSearch.IsValid())
     {
@@ -131,12 +130,7 @@ void UVHGameInstance::HandleFindSessionsComplete(bool bWasSuccessful)
             FSimpleSessionResult Item;
             Item.SessionId = Result.GetSessionIdStr();
             Item.OwningUserName = Result.Session.OwningUserName;
-            Simple.Add(Item);
-        }
-    }
 
-    OnSessionsFound.Broadcast(Simple);
-}
 
 void UVHGameInstance::HandleJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result)
 {
