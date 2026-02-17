@@ -17,7 +17,7 @@ struct FSimpleSessionResult
     FString OwningUserName;
 };
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FVHSessionsFound);
+
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FVHSessionOperationComplete, bool, bSuccess);
 
 UCLASS()
@@ -32,8 +32,6 @@ public:
     UPROPERTY(BlueprintAssignable)
     FVHSessionsFound OnSessionsFound;
 
-    UFUNCTION(BlueprintPure)
-    TArray<FSimpleSessionResult> GetFoundSessions() const { return FoundSessions; }
 
     UPROPERTY(BlueprintAssignable)
     FVHSessionOperationComplete OnHostComplete;
@@ -61,8 +59,7 @@ protected:
     IOnlineSessionPtr SessionInterface;
     TSharedPtr<FOnlineSessionSearch> SessionSearch;
     TArray<FOnlineSessionSearchResult> CachedResults;
-    UPROPERTY()
-    TArray<FSimpleSessionResult> FoundSessions;
+
 
     FDelegateHandle CreateSessionHandle;
     FDelegateHandle FindSessionsHandle;

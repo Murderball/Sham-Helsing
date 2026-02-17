@@ -14,12 +14,12 @@
 ### `/Source`
 ```text
 Source/
-  VHPhasmaSlice.Target.cs
-  VHPhasmaSliceEditor.Target.cs
+
   VHPhasmaSlice/
     VHPhasmaSlice.Build.cs
     VHPhasmaSlice.cpp
     VHPhasmaSlice.h
+
     Core/
       VHGameInstance.h
       VHGameInstance.cpp
@@ -154,7 +154,7 @@ Create `Primary Data Asset` from class `RoleDefinition`:
 Buttons:
 - `Create Character` -> Open `WBP_CharacterCreate`.
 - `Host LAN` -> `GetGameInstance -> HostLANSession`.
-- `Join LAN` -> `FindLANSessions`; on `OnSessionsFound` callback call `GetFoundSessions` to populate list, then `JoinSessionByIndex(0)` for simplest flow.
+
 - `Quit` -> `QuitGame`.
 
 #### `WBP_CharacterCreate`
