@@ -14,12 +14,12 @@
 ### `/Source`
 ```text
 Source/
-  VHPhasmaSlice.Target.cs
-  VHPhasmaSliceEditor.Target.cs
+
   VHPhasmaSlice/
     VHPhasmaSlice.Build.cs
     VHPhasmaSlice.cpp
     VHPhasmaSlice.h
+
     Core/
       VHGameInstance.h
       VHGameInstance.cpp
