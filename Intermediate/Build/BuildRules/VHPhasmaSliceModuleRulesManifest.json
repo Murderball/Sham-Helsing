@@ -1,0 +1,9 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\DAVE\\GameMakerProjects\\Sham-Helsing\\Source\\ShamHelsing\\ShamHelsing.Build.cs",
+		"C:\\Users\\DAVE\\GameMakerProjects\\Sham-Helsing\\Source\\VHPhasmaSlice\\VHPhasmaSlice.Build.cs",
+		"C:\\Users\\DAVE\\GameMakerProjects\\Sham-Helsing\\Source\\VHPhasmaSlice\\VHPhasmaSlice.Target.cs",
+		"C:\\Users\\DAVE\\GameMakerProjects\\Sham-Helsing\\Source\\VHPhasmaSlice\\VHPhasmaSliceEditor.Target.cs"
+	],
+	"EngineVersion": "5.7.1"
+}
