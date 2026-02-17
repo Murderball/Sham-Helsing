@@ -154,7 +154,7 @@ Create `Primary Data Asset` from class `RoleDefinition`:
 Buttons:
 - `Create Character` -> Open `WBP_CharacterCreate`.
 - `Host LAN` -> `GetGameInstance -> HostLANSession`.
-- `Join LAN` -> `FindLANSessions`; on callback fill list; call `JoinSessionByIndex(0)` for simplest flow.
+
 - `Quit` -> `QuitGame`.
 
 #### `WBP_CharacterCreate`
